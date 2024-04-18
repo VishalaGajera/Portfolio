@@ -1,0 +1,89 @@
+@import "mixin";
+
+.home_content {
+    @include flexprob(space-around);
+    font-size: 2em;
+    padding: 77px 100px;
+
+    .left_home {
+
+        .main_heading {
+            @include flexprob(center);
+            flex-wrap: wrap;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: rgb(255, 238, 218);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .sub_heading {
+            @include flexprob(center);
+            flex-wrap: wrap;
+            font-size: 0.7em;
+            font-weight: bold;
+            color: rgb(255, 238, 218);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .home_Link {
+            @include flexprob(center);
+            width: 10em;
+            height: 3em;
+            background-color: gray;
+            color: white;
+            font-weight: 600;
+            font-size: large;
+        }
+        
+        .home_Link:hover{
+            background-color: none;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+    }
+
+    .right_home {
+
+        .profile_image {
+            width: calc(120px + 20vw);
+            height: 100%;
+            object-fit: cover;
+            border: 5px solid white;
+            animation: superman 10s ease-in-out infinite;
+            animation-duration: 10s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            animation-name: superman;
+            animation-timeline: auto;
+            animation-range-start: normal;
+            animation-range-end: normal;
+        }
+
+    }
+}
+
+@keyframes superman {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+@media (max-width:1024px){
+    .home_content{
+        @include flexprob(center);
+        flex-direction: column-reverse;
+        font-size: 1.5em;
+    }
+}

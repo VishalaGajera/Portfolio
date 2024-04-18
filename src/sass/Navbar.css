@@ -1,0 +1,32 @@
+.navbar_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50%;
+  padding: 20px;
+  background-color: rgb(99, 99, 99);
+  color: aliceblue;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+}
+.navbar_content .left_navbar {
+  font-size: 2rem;
+}
+.navbar_content .right_navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar_link {
+  text-decoration: none;
+  color: aliceblue;
+  padding-left: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .navbar_content .right_navbar {
+    display: none;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

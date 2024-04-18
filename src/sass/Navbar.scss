@@ -1,0 +1,33 @@
+@import "mixin";
+
+.navbar_content{
+    @include flexprob(center);
+    gap: 50%;
+    padding: 20px;
+    background-color:rgb(99, 99, 99);
+    color: aliceblue;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    
+    .left_navbar{
+        font-size: 2rem;
+    }
+    .right_navbar{
+        @include flexprob(center);
+    }
+}
+
+.navbar_link{
+    text-decoration: none;
+    color: aliceblue;
+    padding-left: 2rem;
+}
+
+@media (max-width:1024px){
+    .navbar_content{
+        .right_navbar{
+            display: none;
+        }
+    }
+}
