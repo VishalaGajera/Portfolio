@@ -6,7 +6,7 @@ import Footer from './Components/Footer.jsx'
 const Layout = () => {
   return (
     <>
-      <div className="  " >
+      <div className="" >
         <Navbar />
       </div>
       <div className={"body--"}>
