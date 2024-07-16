@@ -15,7 +15,7 @@ dist
 dist-ssr
 
 # PDF folder
-pdf/
+src/pdf/
 
 # Local environment files
 *.local
