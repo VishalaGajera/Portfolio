@@ -1,5 +1,5 @@
 import React from 'react'
-import pdf from "../pdf/VISHALA_GAJERA_RESUME.pdf"
+import pdf from "../Images/resume.pdf"
 import OIG4 from "../../public/assets/hero/9782.jpg"
 import "../sass/Home.scss"
 
